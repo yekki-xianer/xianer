@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*div{*/
+            /*border:1px solid#000;*/
+            /*padding:10px;!*定义元素内容与边框间的空间，不可用负值*!*/
+            /*margin-top:30px;!*控制外部距离，可用负值*!*/
+        /*}*/
+        /*h1.aa{*/
+            /*color:red;}*/
+        /*不加空格表示h1标签并且属性为aa的*/
+        /*h1 .aa{*/
+            /*color:red;*/
+            /*font-family:"宋体";}*/
+        /*加空格表示h1标签的含有aa的所有后代*/
+        div{
+            height:100px;
+            width:100px;
+            float:left;/*可以用float解决外边界塌陷的问题*/
+            display:block;
+        }
+        .test1{background-color:#FF0000;
+                margin-bottom:100px;}
+        .test2{background-color:#0000FF;
+                margin-top:50px;}
+    </style>
+</head>
+<body>
+<div style="float:left">
+    <div class="test1">
+        123
+    </div>
+    <div class="test2">
+        aa
+    </div>
+</div>
+ <!--<h1 class="aa">文本1</h1>-->
+ <!--<h1>文本2</h1>-->
+<!--<div class="test1">-->
+    <!--123-->
+<!--</div>-->
+<!--<div class="test2">-->
+    <!--aa-->
+<!--</div>-->
+</body>
+</html>
