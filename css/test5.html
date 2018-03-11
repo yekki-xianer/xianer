@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            background-color:#FF00FF;
+        }
+        /*.mid{*/
+            /*margin:auto;!*可用于水平居中*!*/
+            /*!*margin:10px 30px 60px 100px;!*上右下左*!*!*/
+            /*!*margin:100px 100px;*!*/
+        /*}*/
+        /*.mid1{*/
+            /*position:relative;!*fixed,absolute也可以*!*/
+            /*left:50%;*/
+            /*!*top:150px;*!*/
+            /*margin-left:-100px;*/
+        /*}*/
+        img{
+            opacity:0.5;
+            filter:alpha(opacity=50);/*本行代码在使用IE8之前的版本时使用*/
+        }
+        ul li:first-child{
+            color:#FF0000;
+        }/*还有last-child*/
+        .firstline{
+            width:200px;
+            background-color:#dddddd;
+        }
+        .firstline:first-line{
+            color:red;
+        }
+        /*ul li{*/
+            /*color:#FF0000;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<div class="firstline">
+    <!--<span style="color:red">PS2键盘的内部结构</span>-->
+    我们不需要过多的去关注，我们只需要关心其接口协议，正确的解码其发送过来的按键信息即可，至于解码到的按键信息该怎么处理，不同的应用有不同的处理方式，这里就不做过多的介绍。
+</div>
+<!--<div class="mid"></div>-->
+<!--<div class="mid1"></div>-->
+<!--<img src="github.png">-->
+<ul>
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+</ul>
+</body>
+</html>
