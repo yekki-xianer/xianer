@@ -4,21 +4,48 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        .test3{
+            /*height:300px;*/
+            width:800px;
+            background-color:green;
+            /*display:inline-block;*/
+            /*position:absolute;*/
+            /*overflow:hidden;*/
+            /*float:left;*//*在父级用以上四种bfc特性，产生bfc区块，不受外部影响，操控内部，解决内部塌陷等问题*/
+        }
        .test1{
-           width:400px;
+           width:100px;
            height:400px;
            background-color:red;
+           float:left;/*如果让块级元素横向排列，有两种方法：把要横向的块级元素设为inline-block，此时成为行内块级元素；把这几个块级元素都设为float，且方向相同，仍为块级元素*/
        }
         .test2{
             width:200px;
             height:200px;
             background-color:blue;
-            float:left;
+            float:left;/*不加这一行，出现高度塌陷*/
+            /*overflow:hidden;!*单加该代码，不能解决高度塌陷*!*/
+        }
+        /*.clearfix{*/
+            /*content:"";*/
+            /*clear:both;*/
+            /*display:block;*/
+            /*   *zoom:1;*/  /*加上该语句可以兼容ie6，ie7*/
+        /*}*/            /*推荐用clearfix的方法清除浮动*/
+        .test3:after{
+            content:"";
+            clear:both;/*清除浮动*/
+            display:block;
+            /*content:url("github.png");*/
         }
     </style>
 </head>
 <body>
-<div class="test1"></div>
-<div class="test2"></div>
+<div class="test3">
+    <div class="test1"></div>
+    <div class="test2"></div>
+</div>
+<!--<div class="test1"></div>-->
+<!--<div class="test2"></div>-->
 </body>
 </html>
