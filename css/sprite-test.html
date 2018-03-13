@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>雪碧图</title>
+    <style>
+        ul li{
+           display:inline-block;
+            height:18px;
+            width:18px;
+            background-image:url("img/icons_type.png");
+            background-color:#0000FF;
+            margin-left:30px;
+            /*background-image:url("img/icons_type.png");*//*相对地址，img文件夹和和当前文档都是CSS的下一级*/
+            /*background-image:url("c://test/a/1.jpg");!*绝对地址*!*/
+            /*background-image:url("../html/github.png");!*相对地址，引用上一级的HTML里的文档*!*/
+        }
+        .qq{
+            /*background-position:18px 0;!*雪碧图定位，原点开始，负坐标延伸*!*/
+            background-position:-18px 0;
+        }
+        .sina{
+            background-position:-32px 0;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<ul>
+    <li></li>
+    <li class="qq"></li>
+    <li class="sina"></li>
+</ul>
+</body>
+</html>
