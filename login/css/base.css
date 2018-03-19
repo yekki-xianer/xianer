@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+}
+/*header css start*/
+.header a{
+    display:block;
+
+}
+/*.header img{*/
+    /*vertical-align:top;*/
+/*}*/
+.header{
+    line-height:0;/*以上两种方法均可以使a和img高度相同*/
+    width:1130px;
+    margin:0 auto;
+}
+/*header css end*/
+
+/*header container start*/
+.container{
+    /*background-image:url("../img/bg.jpg");*/
+    /*background-position:center;*/
+    background: url("../img/bg.jpg")  center ;
+    height:588PX;
+}
+.container.login-bar{
+    width:1130px;
+    margin:0 auto;
+}
+.container.login-form{
+    width:410px;
+    height:524px;
+    background: #ffffff;
+    float:right;
+    margin-top:32px;
+}
+/*header container end*/
