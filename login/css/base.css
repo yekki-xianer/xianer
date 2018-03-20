@@ -24,15 +24,48 @@
     background: url("../img/bg.jpg")  center ;
     height:588PX;
 }
-.container.login-bar{
+.container .login-bar{
     width:1130px;
     margin:0 auto;
 }
-.container.login-form{
+.container .login-form{
     width:410px;
     height:524px;
-    background: #ffffff;
+    background:#ffffff;
     float:right;
     margin-top:32px;
+}
+.container .top-text{
+    padding:27px 0 24px;/*上、左右、下*/
+    text-align:center;/*水平对齐，vertical-align是垂直对齐*/
+    font-size:24px;
+}
+.container .top-text a{
+    text-decoration:none;
+    /*font-size:24px;*/
+    color:#666;
+}
+.container .border-line{
+    margin:0 35px;/*上下、左右*/
+    /*padding:0 35px 0 42px;*/
+    border:1px solid #dddddd;
+    /*border-left:2px solid #dddddd;*/
+}
+.container .top-text a:first-child{
+    color:#f56600;
+}
+.container .top-text a:hover{
+    color:#f56600;
+}
+.container .login-input{
+    width:348px;
+    margin:0 auto;
+}
+.container .login-input input{
+    width:306px;
+    height:22px;
+    line-height:22px;/**/
+    padding:13px 16px 13px 14px;
+    display:block;
 }
 /*header container end*/
