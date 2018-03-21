@@ -2,6 +2,13 @@
     margin:0;
     padding:0;
 }
+/*global css start*/
+.clearfix:after{
+    content:" ";
+    clear:both;
+    display:block;
+}
+/*global css end*/
 /*header css start*/
 .header a{
     display:block;
@@ -57,15 +64,97 @@
 .container .top-text a:hover{
     color:#f56600;
 }
-.container .login-input{
+.container .login-content{
     width:348px;
     margin:0 auto;
 }
+/*.container .login-input{*/
+    /*width:348px;*/
+    /*margin:0 auto;*/
+/*}*/
 .container .login-input input{
+    font-family:arial,"Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:100%;
     width:306px;
     height:22px;
-    line-height:22px;/**/
+    /*line-height:22px;!**!加上该代码可以实现单行文本垂直居中*/
     padding:13px 16px 13px 14px;
     display:block;
+    margin-bottom:14px;
+}
+.container .login-btn input{
+    background-color:#f56600;
+    height:50px;
+    width:100%;
+    border:none;
+    color:#ffffff;
+    font-size:14px;
+    cursor:pointer;
+    margin-bottom:10px;
+}
+.container .small-text{
+    font-size:14px;
+    color:#757575;
+}
+.container .small-text a{
+    text-decoration: none;
+    color:#757575;
+}
+.container .st-left{
+    float:left;
+}
+.container .st-left a{
+    color:#f56600;
+}
+.container .st-right{
+    float:right;
+}
+.container .st-right a:hover{
+    color:#f56600;
+}
+.container .login-type{
+    margin-top:115px;
+}
+.container .login-type fieldset{
+    border:0;
+    border-top:1px solid #bbb;
+    color:#bbb;
+    font-size:14px;
+    padding-top:20px;
+}
+.container .login-icon{
+    text-align:center;
+}
+.container .login-icon a{
+    width:30px;
+    height:30px;
+    background-color:#757575;
+    display:inline-block;
+    border-radius:50%;
+    /*-webkit-border-radius:50%;!*兼容Chrome和Safari浏览器*!*/
+    /*-moz-border-radius:50%;!*兼容火狐*!*/
+    /*-o-border-radius:50%;!*兼容欧朋浏览器*!*/
+    margin:0 17px;
+}
+.container .login-icon i{
+    display:block;
+    width:18px;
+    height:18px;
+    background-image:url("../img/icons_type.png");
+    margin:4px auto 0;
+}
+.container .login-icon .qq{
+    background-position:-19px 0;
+}
+.container .login-icon .sina{
+    background-position:-38px 0;
+}
+.container .login-icon .alipay{
+    background-position:-57px 0;
+    width:25px;
+}
+.container .login-icon .wechat{
+    background-position:-84px 0;
+    width:23px;
 }
 /*header container end*/
