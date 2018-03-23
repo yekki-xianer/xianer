@@ -143,18 +143,30 @@
     background-image:url("../img/icons_type.png");
     margin:4px auto 0;
 }
-.container .login-icon .qq{
+.container .qq i{
     background-position:-19px 0;
 }
-.container .login-icon .sina{
+.container .qq:hover{
+    background-color:#0288d1;
+}
+.container .sina i{
     background-position:-38px 0;
 }
-.container .login-icon .alipay{
+.container .sina:hover{
+    background-color:#d32f2f;
+}
+.container .alipay i{
     background-position:-57px 0;
     width:25px;
 }
-.container .login-icon .wechat{
+.container .alipay:hover{
+    background-color:#0ae;
+}
+.container .wechat i{
     background-position:-84px 0;
     width:23px;
+}
+.container .wechat:hover{
+    background-color:#00d20d;
 }
 /*header container end*/
