@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            height:500px;
+            background-color: #00aaee;
+            background-image:url("github.png" );
+            background-repeat: no-repeat;
+            background-position: 30px 50px;
+        }
+        #div3{
+            width:120px;
+            height:100px;
+            text-align: center;
+            background-color: #00FF00;
+            line-height: 100px;
+        }
+        #div4{
+            height:200px;
+            width:200px;
+            background-color: #ff6700;
+            text-align: center;/*水平居中*/
+            line-height: 200px;/*和height值相同，实现单行元素垂直居中*/
+            margin:0 auto;/*块级元素居中*/
+        }
+        span{
+            display: block;
+            height:50px;
+            width:500px;
+            background-color: #00aaee;
+        }
+    </style>
+</head>
+<body>
+行级元素，水平分布，不能设置宽高，宽度由内容撑
+块级元素，垂直分布，
+行级块元素，水平分布，可以设置宽高，inline-block
+<div id="div1">hhhhhh</div>
+<div id="div3">hhio</div>
+<div id="div4">hhhh   <span>xixixi</span></div>
+<span>hhuhohhhhk</span>
+</body>
+</html>
