@@ -2,6 +2,9 @@
     margin:0;
     padding:0;
 }
+ul{
+    list-style-type: none;
+}
 /*global start*/
 .content{
     width:1226px;
@@ -214,5 +217,9 @@
     display:block;
     width:10px;
     height:10px;
+    border-radius: 50%;
+    border:1px;
+    border-color: rgba(255,255,255,0.3);
+    background: rgba(0,0,0,0.4);
 }
 /*slider-bar end*/
