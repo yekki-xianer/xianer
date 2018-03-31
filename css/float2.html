@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 100px;
+            height: 80px;
+            border: 1px solid #000;
+            background-color: #787fff;
+            float: left;
+            /*float: right;*/
+        }
+    </style>
+</head>
+<body>
+<!--float 脱离文档流，空间释放-->
+      <!--塌陷 子元素浮动，父元素没有高度-->
+      <!--1、给父元素高度-->
+      <!--2、父元素overflow：hidden-->
+      <!--3、在浮动元素下加clear元素，清除浮动-->
+      <!--4、clear：both-->
+<div id="div1">1</div>
+<div id="div2">2</div>
+<div id="div3">3</div>
+</body>
+</html>

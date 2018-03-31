@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*div{*/
+            /*background-color: yellow;*/
+            /*height:200px;*/
+            /*width:200px;*/
+            /*!*padding:20px;*!*/
+            /*!*padding:10px 30px 100px 5px;*!*/
+            /*!*border:5px solid #00aaee;*!*/
+            /*!*margin: 30px;*!*/
+            /*box-sizing: border-box;!*怪异盒模型*!*/
+            /*!*box-sizing: content-box;!*标准盒模型，默认为标准*!*!*/
+            /*!*padding: 20px;*!*/
+            /*!*border:5px solid #00aaee;*!*/
+
+        /*}*/
+        #div1{
+            width: 100px;
+            height: 100px;
+            background-color: #00aaee;
+            margin-bottom: 30px;
+        }
+        #div2{
+            width: 100px;
+            height:100px;
+            background-color: #ff6700;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            /*position: absolute;*/
+            /*float: left;*/
+        }
+        #div3{
+            width: 200px;
+            height:200px;
+            background-color:#787fff;
+            margin-top:30px;
+            position: absolute;
+            /*float: left;*/
+            /*border: 1px solid transparent;*/
+            overflow: hidden;
+        }
+        #div4{
+            width: 80px;
+            height:80px;
+            background-color: #FF0000;
+            margin-top:50px;
+        }
+    </style>
+</head>
+<body>
+<!--css 标准盒模型 width+padding +border -->
+<!--怪异盒模型 没写doctype时 ie6以下版本-->
+<div>
+    jekkijekkijekki jekkijekki jekkijekkijekkijekki jekkijekkijekki jekkijekki jekkijekkijekkijekkijekkijekkki
+</div>
+<div id="div1">jekki</div>
+<div id="div2">yekki</div>
+<div id="div3">
+    <div id="div4">enjiawan</div>
+</div>
+</body>
+</html>

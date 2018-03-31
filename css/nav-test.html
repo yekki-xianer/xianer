@@ -4,37 +4,64 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        /*!*No.1 strat*!*/
+        /*ul{*/
+            /*list-style-type: none;!*去掉ul自带的小点*!*/
+        /*}*/
+        /*li{*/
+            /*!*display:inline-block;*!*/
+            /*float:left;*/
+            /*margin-left:1px;*/
+        /*}*/
+        /*a{*/
+            /*text-decoration:none;!*去掉下划线*!*/
+            /*padding:20px;!*控制文本与边框距离*!*/
+            /*background-color:#FF00FF;*/
+            /*display:block;*/
+            /*width:200px;*/
+            /*color:#fff;*/
+            /*font-weight:bold;*/
+            /*font-size:30px;*/
+            /*!*margin-left:1px;!*可以写在a标签里，但尽量加在想控制的元素里，本例为li*!*!*/
+            /*!*border-left:1px solid#fff;!*可以实现边框，不推荐*!*!*/
+        /*}*/
+        /*a:hover{*/
+            /*background-color:red;*/
+        /*}*/
+        /*No.2 start*/
         ul{
-            list-style-type: none;/*去掉ul自带的小点*/
+            list-style: none;
         }
         li{
-            /*display:inline-block;*/
-            float:left;
-            margin-left:1px;
+            float: left;
+            height:30px;
+            line-height: 30px;
+            width:120px;
+            margin-right: 1px;
+            background-color: purple;
+            font-size: 20px;
+            font-weight: bold;
+            text-indent: 16px;
         }
         a{
-            text-decoration:none;/*去掉下划线*/
-            padding:20px;/*控制文本与边框距离*/
-            background-color:#FF00FF;
-            display:block;
-            width:200px;
-            color:#fff;
-            font-weight:bold;
-            font-size:30px;
-            /*margin-left:1px;!*可以写在a标签里，但尽量加在想控制的元素里，本例为li*!*/
-            /*border-left:1px solid#fff;!*可以实现边框，不推荐*!*/
+            text-decoration: none;
+            color: #fff;
+            display: block;
         }
         a:hover{
-            background-color:red;
+            background-color: #ff6700;
         }
+        /*li:hover{*/
+            /*background-color: #ff6700;*/
+        /*}*/
     </style>
 </head>
 <body>
 <ul>
-    <li><a href="">link</a></li>
-    <li><a href="">link</a></li>
-    <li><a href="">link</a></li>
-    <li><a href="">link</a></li>
+    <li><a href="#">link 1</a></li>
+    <li><a href="#">link 2</a></li>
+    <li><a href="#">link 3</a></li>
+    <li><a href="#">link 4</a></li>
 </ul>
 </body>
 </html>
